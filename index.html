@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="kinesio, kinesiologia, cintia cordoba">
+    <meta name="description" content="">
+    <meta name="author" content="Alexis Lopez - Apixel">
+    <title>CINTIA CORDOBA - KINESIOLOGIA</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+        href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+        href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <link href="css/elegant_font/elegant_font.min.css" rel="stylesheet">
+    <link href="css/simple-line-icons-master/css/simple-line-icons.css" rel="stylesheet">
+    <link href="css/spa_icons/css/spa.css" rel="stylesheet">
+    <link href="css/jquery.switch.css" rel="stylesheet">
+    <link href="css/weather.css" rel="stylesheet">
+    <link href="css/date_time_picker.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div>
+                <img src="img/logo.png" width="200" height="auto" alt="" data-retina="true">
+                Cargando...
+            </div>
+        </div>
+    </div><!-- End Preloader -->
+
+    <div id="wrapper">
+        <div id="main">
+
+            <!-- <div id="lang" class="hidden-xs">
+                <ul>
+                    <li><a href="#" id="active">EN</a></li>
+                    <li><a href="#">FR</a></li>
+                </ul>
+            </div>End Lang -->
+
+            <div id="caption" class="hidden-xs">
+                <h1>BIENVENIDOS</h1>
+                <h2></h2>
+            </div><!-- End Caption -->
+
+            <div id="main_container">
+
+                <div id="logo">
+                    <img src="img/logo.png" width="auto" height="60" alt="CINTIA-LOGO" data-retina="true">
+                </div>
+
+                <!-- <ul id="lang_mobile">
+                    <li><a href="#" id="active_m">EN</a></li>
+                    <li><a href="#">FR</a></li>
+                </ul> -->
+
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#" id="modal-about-open">Sobre Mi</a></li>
+                        <li><a href="#" id="modal-treatments-open">Servicios</a></li>
+                        <li><a href="#" id="modal-blog-open">Galeria</a></li>
+                        <li><a href="#" id="modal-contacts-open">Contacto</a></li>
+                    </ul>
+                </nav><!-- End nav-->
+
+                <!-- Start Booking Wizard-->
+                <div id="form_container">
+
+                    <div id="top-wizard">
+                        <div id="progressbar"></div>
+                        <span id="location"></span>
+                    </div><!-- end top-wizard -->
+
+                    <form id="wrapped" method="POST">
+                        <input id="website" name="website" type="text"
+                            value=""><!-- Leave for security protection, read docs for details -->
+                        <div id="middle-wizard">
+
+                            <div class="step">
+                                <div class="title">
+                                    <span></span>
+                                    <h3>Reservá tu turno</h3>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control date-pick required" type="text" name="date_pick"
+                                        id="date_pick" placeholder="Fecha">
+                                    <i class="icon-spa-calendar_2"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input class="time-pick form-control required" type="text" placeholder="Horario"
+                                        name="time_pick" id="time_pick">
+                                    <i class="icon-clock"></i>
+                                </div>
+                                <div class="form-group">
+                                    <select class="required ddslick" name="treatment_type">
+                                        <option value="" data-imagesrc="img/icons_select/select_treatment.svg">
+                                            Tratamiento</option>
+                                        <option value="Facial" data-imagesrc="img/icons_select/facial.svg">Facial
+                                        </option>
+                                        <option value="Body" data-imagesrc="img/icons_select/body.svg">Body</option>
+                                        <option value="Body Relaxing"
+                                            data-imagesrc="img/icons_select/body_relaxing.svg">Body Relaxing</option>
+                                        <option value="Osteopathy" data-imagesrc="img/icons_select/osteopathy.svg">
+                                            Osteopathy</option>
+                                        <option value="Jacuzzi/Sauna" data-imagesrc="img/icons_select/jacuzzi.svg">
+                                            Jacuzzi/Sauna</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="row clearfix">
+                                    <div class="col-xs-6">
+                                        <div class="form-group nomargin">
+                                            <div class="qty-buttons">
+                                                <input type="button" value="+" class="qtyplus" name="people">
+                                                <input type="text" name="people" id="people" value="" class="qty form-control required" placeholder="People">
+                                                <input type="button" value="-" class="qtyminus" name="people">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div><!-- end step-->
+
+                            <div class="step">
+                                <div class="title">
+                                    <span>Reservá tu turno</span>
+                                    <h3>Informacion del paciente</h3>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="firstname" id="firstname" class=" form-control required"
+                                        placeholder="Nombre/s">
+                                    <i class="icon-user"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="lastname" id="lastname" class=" form-control required"
+                                        placeholder="Apellido/s">
+                                    <i class="icon-user"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class=" form-control required"
+                                        placeholder="Email">
+                                    <i class="icon-envelope"></i>
+                                </div>
+                                <div class="form-group nomargin">
+                                    <input type="text" name="telephone" id="telephone" class=" form-control required"
+                                        placeholder="Telefono/Celular">
+                                    <i class="icon-phone"></i>
+                                </div>
+                            </div><!-- end step -->
+
+                            <!-- <div class="step">
+                                <div class="title">
+                                    <span>Booking Request</span>
+                                    <h3>Add your booking options</h3>
+                                </div>
+                                <div class="form-group options clearfix first">
+                                    <em><i class="icon-spa-oil"></i>Extra Oil <strong> +$24*</strong></em>
+                                    <label class="switch-light switch-ios pull-right">
+                                    <input type="checkbox" value="Extra Oil" name="options[]">
+                                    <span><span>No</span><span>Yes</span></span>
+                                    <a></a>
+                                    </label>
+                                </div>
+                                <div class="form-group options clearfix">
+                                    <em><i class="icon-spa-tisane"></i>Tisane<strong> +$10*</strong></em>
+                                    <label class="switch-light switch-ios pull-right">
+                                    <input type="checkbox" value="Tisane" name="options[]">
+                                    <span><span>No</span><span>Yes</span></span>
+                                    <a></a>
+                                    </label>
+                                </div>
+                                <div class="form-group options clearfix last">
+                                    <em><i class="icon-spa-candles"></i>Extra Candles<strong> +$10*</strong></em>
+                                    <label class="switch-light switch-ios pull-right">
+                                    <input type="checkbox" value="Candles" name="options[]">
+                                    <span><span>No</span><span>Yes</span></span>
+                                    <a></a>
+                                    </label>
+                                </div>
+                            </div> -->
+                            <!-- end step -->
+
+                            <div class="submit step" id="complete">
+                                <i class="icon-emotsmile"></i>
+                                <h3>¡Gracias por confiar en mi!</h3>
+                                <button type="submit" name="process" class="submit">Concluir Reserva</button>
+                            </div><!-- end submit step -->
+
+                        </div><!-- end middle-wizard -->
+
+                        <div id="bottom-wizard" class="clearfix">
+                            <strong>Cualquier consulta podes llamarme <a href="tel://004542344599">+45 423 445
+                                    99</a></strong>
+                            <button type="button" name="backward" class="backward"></button>
+                            <button type="button" name="forward" class="forward"></button>
+                        </div><!-- end bottom-wizard -->
+
+                    </form>
+                </div><!-- End Booking Wizard- -->
+
+                <div id="copy">© Cintia Cordoba 2023</div>
+            </div><!-- End main_container -->
+        </div><!-- End main -->
+
+        <!-- Modal  Servicios -->
+        <div id="modal-offers">
+
+            <a href="#" class="modal-close"><i class="icon_close"></i></a>
+
+            <div class="top_in">
+                <img src="img/logo.png" width="auto" height="39" alt="" data-retina="true">
+                <h3>Servicios</h3>
+                <a href="#" class="modal-close"><i class="icon_close"></i></a>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-9">
+                        <div class="post">
+                            <a href="blog_post.html"><img src="img/cintia/OneDrive-2023-01-05/Cintia 03.jpg" alt=""
+                                    class="img-responsive"></a>
+                            <div class="post_info clearfix">
+                                <div class="post-left">
+                                    <ul>
+                                        <li><i class="icon_calendar"></i> 12.05.2015</li>
+                                        <li><i class="icon_drawer_alt"></i> <a href="#">Category</a></li>
+                                        <li><i class="icon_tags_alt"></i> <a href="#">Works</a>, <a
+                                                href="#">Personal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="post-right"><i class="icon_comment_alt"></i> <a href="#">25</a></div>
+                            </div>
+                            <h2>Osteopatia</h2>
+                            <p>
+                                Es una disciplina terapéutica basada en un conjunto de conocimientos específico: la
+                                anatomía y fisiología del cuerpo humano, el conocimiento de como intervienen los
+                                diferentes tejidos en la producción de la enfermedad y la aplicación de técnicas de
+                                normalización de las funciones alteradas. Esta disciplina se basada en un sistema de
+                                evaluación (estático y dinámico), diagnóstico y tratamiento. El abordaje es holístico
+                                buscando descubrir la causa del problema, y el objetivo es restablecer la capacidad de
+                                autocuración del organismo, normalizando el funcionamiento de los sistemas.
+                            </p>
+                            <h4>Abordajes</h4>
+                            <p>
+                                <strong>· Osteopatía Visceral:</strong> Orientada a actuar sobre los tejidos que
+                                participan en las funciones de las vísceras, las membranas fibrosas en relación, los
+                                músculos, los diferentes planos de deslizamiento entre los órganos, los vasos
+                                sanguíneos, los nervios, todos los tejidos que aseguran el funcionamiento orgánico, lo
+                                que no siempre ocurre y que puede ser debido a adherencias, tracciones miofasciales que
+                                dificultan la normal movilidad de las vísceras. Las técnicas manuales viscerales ayudan
+                                a liberar interrupciones en el flujo de movilidad, lo que ofrece al organismo una base
+                                funcional útil, productiva y saludable.
+                            </p>
+                            <p>
+                                <strong>· Osteopatía Craneal: </strong>Son técnicas manuales, que liberan y facilitan la
+                                micromovilidad del cráneo y el conjunto de la relación cráneo sacra, a través de las
+                                membranas meníngeas y el papel del líquido cefalorraquídeo. Las consecuencias de las
+                                alteraciones posturales, traumatismos, desequilibrios musculares, etc. pueden afectar a
+                                nervios craneales, arterias, glándulas y otros tejidos. Provocando neuralgias,
+                                dificultades de vivió, audición, alteraciones de funciones glandulares, vértigos,
+                                migrañas, e incluso a través del sistema nervioso vegetativo, trastornos digestivos,
+                                respiratorios, vasculares.
+                            </p>
+                            <h2><strong>"ENCUENTRA EL ORIGEN DE LA LESION; TRATALO Y DEJA QUE EL ORGANISMO
+                                    ACTUE¨</strong> - ANDREW TAYLOR STIL - PADRE DE LA OSTEOPATIA </h2>
+                            <a href="blog_post.html" class="btn_1">Read more</a>
+                        </div><!-- end post -->
+
+                        <div class="post">
+                            <a href="blog_post.html"><img src="img/blog-2.jpg" alt="" class="img-responsive"></a>
+                            <div class="post_info clearfix">
+                                <div class="post-left">
+                                    <ul>
+                                        <li><i class="icon_calendar"></i> 12.05.2015</li>
+                                        <li><i class="icon_drawer_alt"></i> <a href="#">Category</a></li>
+                                        <li><i class="icon_tags_alt"></i> <a href="#">Works</a>, <a
+                                                href="#">Personal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="post-right"><i class="icon_comment_alt"></i><a href="#">25 </a></div>
+                            </div>
+                            <h2>MEP</h2>
+                            <p>
+                                MEP significa MICROELECTROLISIS PERCUTANEA. Es una técnica de fisioterapia invasiva que
+                                consiste en la aplicación de una corriente galvánica a través de una aguja de acupuntura
+                                que produce un proceso inflamatorio de carácter local, permitiendo la fagocitosis y la
+                                reparación del tejido blando afectado (tendones, ligamento, musculo, etc.). La corriente
+                                eléctrica galvánica y el propio estimulo mecánico de la aguja constituyen agentes
+                                físicos propios del campo terapéutico de la fisioterapia.
+                            </p>
+                            <h4>Indicaciones</h4>
+                            <p>
+                                Se tratan las lesiones agudas como: <strong>las crónicas</strong> -
+                                <strong>Pubalgias</strong> - <strong>Tendinopatías</strong> - <strong>Tendinitis y
+                                    Tendinosis</strong> - <strong>Fascitis plantar</strong> - <strong>Esguinces</strong>
+                                - <strong>Puntos gatillos</strong> - <strong>Fibrosis</strong> - <strong>Periostitis
+                                    Tibial</strong> - <strong>Síndrome del túnel del carpo</strong> - <strong>Síndrome
+                                    del túnel del tarso</strong> - <strong>Epicondilitis</strong>
+                            </p>
+                            <a href="blog_post.html" class="btn_1">Read more</a>
+                        </div><!-- end post -->
+
+                        <div class="post">
+                            <a href="blog_post.html"><img src="img/blog-3.jpg" alt="" class="img-responsive"></a>
+                            <div class="post_info clearfix">
+                                <div class="post-left">
+                                    <ul>
+                                        <li><i class="icon_calendar"></i> 12.05.2015</li>
+                                        <li><i class="icon_drawer_alt"></i> <a href="#">Category</a></li>
+                                        <li><i class="icon_tags_alt"></i> <a href="#">Works</a>, <a
+                                                href="#">Personal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="post-right"><i class="icon_comment_alt"></i><a href="#">25 </a></div>
+                            </div>
+                            <h2>MEP SPORT</h2>
+                            <p>
+                                MEP SPORT concept revoluciono la fisioterapia deportiva y ya es usada por la mayoría de
+                                los equipos de futbol en Argentina y varias selecciones de múltiples disciplinas en
+                                América Latina. Consigue resultados en una sola aplicación en patologías que otros
+                                agentes no consiguen resolver.
+                            </p>
+                            <p>
+                                Es empleada en lesiones agudas, subagudas y crónicas, tales como: <strong>Tendón de
+                                    Aquiles</strong> - <strong>Tendón Rotuliano</strong> - <strong>Codo de
+                                    Tenista</strong> - <strong>Codo de Golfista</strong> - <strong>Dedo en
+                                    resorte</strong> - <strong>Desgarros subagudos y crónicos</strong> - <strong>Dolor
+                                    neuropático en cicatrices</strong> - <strong>Fascitis plantar</strong> -
+                                <strong>Fibrosis</strong> - <strong>Periostitis</strong> - <strong>Puntos
+                                    gatillo</strong> - <strong>Pubalgias</strong> - <strong>Síndrome del supra
+                                    espinoso</strong> - <strong>Síndrome del manguito rotador</strong> -
+                                <strong>Síndrome femoro-patelar</strong>
+                            </p>
+                            <p>
+                                Y MUCHAS PATOLOGIAS MAS.
+                            </p>
+                            <a href="blog_post.html" class="btn_1">Read more</a>
+                        </div><!-- end post -->
+
+                        <div class="post">
+                            <a href="blog_post.html"><img src="img/blog-3.jpg" alt="" class="img-responsive"></a>
+                            <div class="post_info clearfix">
+                                <div class="post-left">
+                                    <ul>
+                                        <li><i class="icon_calendar"></i> 12.05.2015</li>
+                                        <li><i class="icon_drawer_alt"></i> <a href="#">Category</a></li>
+                                        <li><i class="icon_tags_alt"></i> <a href="#">Works</a>, <a
+                                                href="#">Personal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="post-right"><i class="icon_comment_alt"></i><a href="#">25 </a></div>
+                            </div>
+                            <h2>MEP BEAUTY</h2>
+                            <p>
+                                es una técnica que se emplea en tratamientos estéticos tales como arrugas, estrías, relleno de labios y cicatrices. Los investigadores brasileños Guirro and Guirro desenvuelven en la década de los ¨90 la técnica denominada MICROGALVANOPUNTURA, ELECTROLIFTING, etc. 
+                            </p>
+                            <p>
+                                Consiste en aplicar con una pequeñísima aguja, una corriente microgalvanica, desencadenando una respuesta inflamatoria que trae aparejada la formación de nuevo colágeno. Con esto se consigue rellenar naturalmente las arrugas, consiguiendo notar cambios definitivos en unas 5 sesiones. 
+                            </p>
+                            <p>
+                                En las estrías se observará una disminución de la depresión y cambios en la coloración, quedando la piel prácticamente igual a la zona que no tiene estrías en unas 7 sesiones. 
+                            </p>
+                            <a href="blog_post.html" class="btn_1">Read more</a>
+                        </div><!-- end post -->
+
+                        <div class="post">
+                            <a href="blog_post.html"><img src="img/blog-3.jpg" alt="" class="img-responsive"></a>
+                            <div class="post_info clearfix">
+                                <div class="post-left">
+                                    <ul>
+                                        <li><i class="icon_calendar"></i> 12.05.2015</li>
+                                        <li><i class="icon_drawer_alt"></i> <a href="#">Category</a></li>
+                                        <li><i class="icon_tags_alt"></i> <a href="#">Works</a>, <a
+                                                href="#">Personal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="post-right"><i class="icon_comment_alt"></i><a href="#">25 </a></div>
+                            </div>
+                            <h2>ACUPUNTURA</h2>
+                            <p>
+                                Es una técnica terapéutica que se desarrolla a partir de agujas que se clavan en ciertos puntos del cuerpo (puntos acupunturales) 
+                            </p>
+                            <p>
+                                <strong>Objetivos:</strong> Restaurar la salud del paciente a través de la inserción y de la manipulación de agujas en el cuerpo humano, para re–equilibrar la energía del cuerpo. 
+                            </p>
+                            <h4>Beneficios</h4>
+                            <p><strong>·</strong> Ponerles fin a problemas de stress o a cuadros de ansiedad</p>
+                            <p><strong>·</strong> Aliviar y reducir dolores como, por ejemplo: <strong>Cefaleas</strong> - <strong>Migrañas</strong> - <strong>Esguinces</strong> - <strong>Artritis</strong> - <strong>Dolores Articulares</strong> - <strong>Problemas de espalda</strong></p>
+                            <p><strong>·</strong> Ayuda a mejorar la circulación sanguínea </p>
+                            <p><strong>·</strong> Ayuda a perder peso</p>
+                            <p><strong>·</strong> Ayuda a dejar hábito nocivo de fumar</p>
+                            <p><strong>·</strong> Ponerles fin a los problemas de insomnio </p>
+                            <a href="blog_post.html" class="btn_1">Read more</a>
+                        </div><!-- end post -->
+
+                        <div class="post">
+                            <a href="blog_post.html"><img src="img/blog-3.jpg" alt="" class="img-responsive"></a>
+                            <div class="post_info clearfix">
+                                <div class="post-left">
+                                    <ul>
+                                        <li><i class="icon_calendar"></i> 12.05.2015</li>
+                                        <li><i class="icon_drawer_alt"></i> <a href="#">Category</a></li>
+                                        <li><i class="icon_tags_alt"></i> <a href="#">Works</a>, <a
+                                                href="#">Personal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="post-right"><i class="icon_comment_alt"></i><a href="#">25 </a></div>
+                            </div>
+                            <h2>PUNCION SECA</h2>
+                            <p>
+                                Es una técnica invasiva utilizada en fisioterapia para eliminar puntos dolorosos musculares (o puntos gatillos), que se pueden generar debido a sobrecargas, movimientos bruscos, etc. Se llama PUNCION SECA porque NO INTRODUCIMOS NINGUN ANESTESICO, NI SUSTANCIA: 
+                            </p>
+                            <h4>Beneficios</h4>
+                            <p><strong>·</strong> Efectiva para combatir los puntos gatillo miofasciales y a nivel muscular. </p>
+                            <p><strong>·</strong> Llega a los tejidos que manualmente es muy complejos abordar </p>
+                            <p><strong>·</strong> Ayuda a curar lesiones crónicas </p>
+                            <p><strong>·</strong> Acelera la recuperación de una lesión, reduciendo los tipos de espera </p>
+                            <h4>¿CUANTO DURA EL DOLOR DE LA PUNCION SECA POSTERIOR A LA SESION?</h4>
+                            <p>
+                                El dolor después de la PUNCION SECA se conoce como DOLOR Post-PUNCION y puede durar entre 12 y 48 hs. Puede ser de leve a moderado este plazo, y se considera adecuado y corresponde a la regeneración del tejido tras el tratamiento. 
+                            </p>
+                            <a href="blog_post.html" class="btn_1">Read more</a>
+                        </div><!-- end post -->
+
+
+                        <!-- <ul class="pager">
+                            <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        </ul> -->
+
+                    </div><!-- End col-md-9-->
+
+                    <aside class="col-md-3" id="sidebar">
+
+                        <div class="widget">
+                            <div id="custom-search-input-blog">
+                                <div class="input-group col-md-12">
+                                    <input type="text" class="form-control input-lg" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info btn-lg" type="button">
+                                            <i class="icon_search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div><!-- End Search -->
+                        <hr>
+                        <div class="widget">
+                            <h4>Categories</h4>
+                            <ul id="cat_nav_blog">
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Treatments</a></li>
+                                <li><a href="#">New Treatments</a></li>
+                            </ul>
+                        </div><!-- End widget -->
+
+                        <hr>
+
+                        <div class="widget">
+                            <h4>Recent post</h4>
+                            <ul class="recent_post">
+                                <li>
+                                    <i class="icon_calendar"></i> 16th July, 2020
+                                    <div><a href="#">It is a long established fact that a reader will be distracted </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon_calendar"></i> 16th July, 2020
+                                    <div><a href="#">It is a long established fact that a reader will be distracted </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon_calendar"></i> 16th July, 2020
+                                    <div><a href="#">It is a long established fact that a reader will be distracted </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- End widget -->
+                        <div class="widget tags">
+                            <h4>Tags</h4>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Dolor</a>
+                            <a href="#">Long established</a>
+                            <a href="#">Sit amet</a>
+                            <a href="#">Latin words</a>
+                            <a href="#">Excepteur sint</a>
+                        </div><!-- End widget -->
+
+                    </aside><!-- End aside -->
+
+                </div><!-- End row -->
+            </div><!-- End container -->
+
+            <div class="footer_in">
+                <strong><i class="icon_phone"></i> Llamame al 0044 9887732</strong>
+                <a href="#" class="modal-close"><i class="icon_close"></i></a>
+            </div>
+        </div><!-- End modal -->
+
+        <!-- Modal About -->
+        <div id="modal-about">
+            <a href="#" class="modal-close"><i class="icon_close"></i></a>
+
+            <div class="top_in">
+                <img src="img/logo.png" width="auto" height="39" alt="" data-retina="true">
+                <h3>Sobre Mi</h3>
+                <a href="#" class="modal-close"><i class="icon_close"></i></a>
+            </div>
+
+            <div class="container_gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="carousel" id="about">
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/Grounding-02.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/cin 2.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/DSC01250.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                            </div>
+                            <!-- End carousel -->
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row add_bottom_30">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="box_style_1">
+                                <span></span>
+                                <h3>Inicios</h3>
+                                <p>
+                                    Cuando terminé el colegio secundario comencé el Instructorado de Aeróbica, donde
+                                    obtuve el título de Instructora y Entrenadora de Fitness.
+                                    Luego me interesé por el Stretching y el trabajo especializado en personas de la 3•
+                                    edad, en los cuales me formé durante un año.
+                                    <br>
+                                    Charlando con un jefe del club del club GEBA, lugar donde yo estaba trabajando, me
+                                    sugirió que me anote en el profesorado de educación física. Tome la idea y no dude
+                                    en realizarlo.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End row -->
+                </div><!-- End container -->
+            </div><!-- End container_gray -->
+
+            <div class="container_gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="carousel" id="about">
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/cin y terry.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/Cin pensando.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/Cintia 03.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                            </div>
+                            <!-- End carousel -->
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row add_bottom_30">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="box_style_1">
+                                <span></span>
+                                <h3>Crecimiento</h3>
+                                <p>
+                                    5 años más tarde logre la meta y como soy inquieta y me gusta progresar me propuse
+                                    lograr otra meta: ser Licenciada en Kinesiología y Fisiatría, con lo cual ampliaría
+                                    mis conocimientos. Para lo cual me anote en la USAL, carrera de terapista física, y
+                                    luego me especialice en la USAM, donde obtuve el título de Licenciada en
+                                    Kinesiología y Fisioterapia.
+                                    <br>
+                                    Durante esos años de estudio roté por diferentes hospitales y centros de
+                                    rehabilitación y me di cuenta de que lo mío eran las técnicas manuales, ya que
+                                    tratar a los pacientes con equipos no me gustaba.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End row -->
+                </div><!-- End container -->
+            </div><!-- End container_gray -->
+
+            <div class="container_gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="carousel" id="about">
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/Cintia 01.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/cin feliz consultorio.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                                <div class="item">
+                                    <img src="img/cintia/OneDrive-2023-01-05/about/DSC01265.jpg" alt=""
+                                        class="img-responsive">
+                                </div>
+                            </div>
+                            <!-- End carousel -->
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row add_bottom_30">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="box_style_1">
+                                <span></span>
+                                <h3>Progreso Continuo</h3>
+                                <p>
+                                    Por tal motivo decidí hacer la carrera de posgrado en osteopatía. Esta formación
+                                    duraría 6 años, durante los cuales también incursione en otras técnicas:
+                                    quiropraxia, acupuntura, Mep sport and beauty (microelectrolisis percutánea),
+                                    punción seca, tapping, sin dejar de lado la formación física, para lo cual me
+                                    capacite en: entrenamiento preventivo, musculación y entrenamiento deportivo,
+                                    entrenamiento funcional, diplomatura en ciencias del ejercicio y lesiones
+                                    deportivas, certificación en entrenamiento inestable y protector, entrenadora de
+                                    Stretching.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End row -->
+                </div><!-- End container -->
+            </div><!-- End container_gray -->
+
+
+            <div class="container">
+                <div class="main_title add_bottom_30">
+                    <span></span>
+                    <h2 style="color: rgb(18, 156, 156);">Mi Filosofía</h2>
+                    <!-- <p>
+                         Ad principes scriptorem duo, te omnium gubergren eam, et eam ancillae appareat dissentiet.
+                    </p> -->
+                </div>
+                <div class="row box_style_1">
+                    <h5>
+                        Me encantan los desafíos y me apasiona lo que hago. Soy imparable e incansable, por eso creo que
+                        es inagotable la cantidad de herramientas que tenemos para brindarle a nuestros pacientes.
+                    </h5>
+                    <h5>
+                        ¡Por tal motivo es que sigo adelante día a día! En este momento me encuentro realizando una
+                        formación en Decodificación Biológica (el origen de la enfermedad).
+                    </h5>
+                    <h5>
+                        Seguimos en crecimiento permanente y de manera constante.
+                    </h5>
+                    <h3>
+                        Gracias…Cintia Córdoba
+                    </h3>
+                </div>
+                <!-- <div class="main_title add_bottom_30">
+                    <span></span>
+                    <h2>General facilities</h2>
+                    <p>
+                         Ad principes scriptorem duo, te omnium gubergren eam, et eam ancillae appareat dissentiet.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box_feat">
+                            <i class="icon-spa-cartified_massagist"></i>
+                            <h3>Certified Massagist</h3>
+                            <p>
+                                Ut postea legendos vim, usu an reque novum inimicus, cum aperiri molestiae splendide ea. Ad nam modus iudico rationibus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box_feat">
+                            <i class="icon-spa-shower"></i>
+                            <h3>Shower</h3>
+                            <p>
+                                Ut postea legendos vim, usu an reque novum inimicus, cum aperiri molestiae splendide ea. Ad nam modus iudico rationibus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box_feat">
+                            <i class="icon-spa-dress"></i>
+                            <h3>Spa dress</h3>
+                            <p>
+                                Ut postea legendos vim, usu an reque novum inimicus, cum aperiri molestiae splendide ea. Ad nam modus iudico rationibus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box_feat">
+                            <i class="icon-spa-tisane"></i>
+                            <h3>Tisane</h3>
+                            <p>
+                                Ut postea legendos vim, usu an reque novum inimicus, cum aperiri molestiae splendide ea. Ad nam modus iudico rationibus.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- End row -->
+                <!-- <div class="row  add_bottom_30">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box_feat">
+                            <i class="icon-spa-parking"></i>
+                            <h3>Parking</h3>
+                            <p>
+                                Ut postea legendos vim, usu an reque novum inimicus, cum aperiri molestiae splendide ea. Ad nam modus iudico rationibus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box_feat">
+                             <i class="icon-spa-dog"></i>
+                            <h3>Pet parking</h3>
+                            <p>
+                                Ut postea legendos vim, usu an reque novum inimicus, cum aperiri molestiae splendide ea. Ad nam modus iudico rationibus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box_feat">
+                            <i class="icon-spa-disable"></i>
+                            <h3>Disable</h3>
+                            <p>
+                                Ut postea legendos vim, usu an reque novum inimicus, cum aperiri molestiae splendide ea. Ad nam modus iudico rationibus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box_feat">
+                            <i class="icon-spa-credit_card"></i>
+                            <h3>Credit card</h3>
+                            <p>
+                                Ut postea legendos vim, usu an reque novum inimicus, cum aperiri molestiae splendide ea. Ad nam modus iudico rationibus.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- End row -->
+                <hr>
+                <!-- <div class="main_title add_bottom_30">
+                    <span></span>
+                    <h2>Testimonials</h2>
+                    <p>
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div> -->
+                <div class="row add_bottom_30">
+                    <div class="col-md-8 col-md-offset-2">
+                        <!-- <div class="carousel" id="testimonial">
+                        <div>
+                            <blockquote class="testimonial">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Donec hendrerit vehicula est, in consequat. Donec hendrerit vehicula est, in consequat.
+                                </p>
+                            </blockquote>
+                            <div class="testimonial-arrow-down">
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="img-thumbnail img-thumbnail-small">
+                                    <img src="img/avatar1.jpg" alt="">
+                                </div>
+                                <p>
+                                    <strong>Mark Smith</strong><span>20 March 2015</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <blockquote class="testimonial">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </blockquote>
+                            <div class="testimonial-arrow-down"></div>
+                            <div class="testimonial-author">
+                                <div class="img-thumbnail img-thumbnail-small">
+                                    <img src="img/avatar2.jpg" alt="">
+                                </div>
+                                <p>
+                                    <strong>Lucas Fox</strong><span>31 April 2015</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <blockquote class="testimonial">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Donec hendrerit vehicula est, in consequat. Donec hendrerit vehicula est, in consequat.
+                                </p>
+                            </blockquote>
+                            <div class="testimonial-arrow-down">
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="img-thumbnail img-thumbnail-small">
+                                    <img src="img/avatar3.jpg" alt="">
+                                </div>
+                                <p>
+                                    <strong>Loris Axell</strong><span>25 March 2015</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                        <!-- End carousel -->
+                    </div>
+                </div>
+                <!-- End row -->
+            </div><!-- End container -->
+
+            <div class="footer_in">
+                <strong><i class="icon_phone"></i> Llamame al 0044 9887732</strong>
+                <a href="#" class="modal-close"><i class="icon_close"></i></a>
+            </div>
+
+        </div> <!-- End modal -->
+
+        <!-- Modal Galeria -->
+        <div id="modal-blog">
+            <a href="#" class="modal-close"><i class="icon_close"></i></a>
+
+            <div class="top_in">
+                <img src="img/logo.png" width="auto" height="39" alt="" data-retina="true">
+                <h3>Galeria</h3>
+                <a href="#" class="modal-close"><i class="icon_close"></i></a>
+            </div>
+            
+            <div class="container">
+                        <div class="row">
+                        
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>
+                            
+                            <!-- <div class="col-md-6">
+                                <h4 class="styled">Facial <strong>$60</strong><sup> (from)</sup><span> Pellentesque amet adipiscing scelerisque</span></h4>
+                                <p>
+                                     Lorem ipsum dolor sit amet, pellentesque amet adipiscing scelerisque, vitae urna aenean, justo malesuada at eu, orci varius risus luctus enim a malesuada. Erat in tempor magna, eget porttitor posuere.
+                                </p>
+                                <ul class="additional_info">
+                                    <li><a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="" data-original-title="Shower available"><i class="icon-spa-shower"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="" data-original-title="Towels available"><i class="icon-spa-towels"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="" data-original-title="Slippers"><i class="icon-spa-dress"></i></a></li>
+                                </ul>
+                                <p>
+                                    <a href="#" class="modal-close booking">Book now</a>
+                                </p>
+                            </div> -->
+                            
+                        </div><!-- End row -->
+                        
+                        <hr>
+                        
+                        <div class="row">
+                        
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>
+                        </div><!-- End row -->
+                        
+                        <hr>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>                            
+                        </div><!-- End row -->
+                        
+                        <hr>
+                        
+                        <div class="row">
+                        
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>                            
+                        </div><!-- End row -->
+                        
+                        <hr>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="carousel">
+                                    <div class="item">
+                                        <img src="img/spa_1_1.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_2.jpg" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/spa_1_3.jpg" alt="" class="img-responsive">
+                                    </div>
+                                </div><!-- End carousel -->
+                            </div>                            
+                        </div><!-- End row -->
+                        
+                        <hr>
+                        
+                        <!-- <div class="table-responsive add_bottom_60">
+                            <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>
+                                     Treatment Type 
+                                </th>
+                                <th>
+                                    1 Session
+                                </th>
+                                <th>
+                                     2 Sessions
+                                </th>
+                                <th>
+                                     3 Sessions
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                     Facial
+                                </td>
+                                <td>
+                                    110$
+                                </td>
+                                <td>
+                                    180$
+                                </td>
+                                <td>
+                                    210$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                     Full Body
+                                </td>
+                                <td>
+                                     110$
+                                </td>
+                                <td>
+                                     190$
+                                </td>
+                                <td>
+                                     230$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                     Body Relaxing
+                                </td>
+                                <td>
+                                     110$
+                                </td>
+                                <td>
+                                     190$
+                                </td>
+                                <td>
+                                     210$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Osteopathy
+                                </td>
+                                <td>
+                                     130$
+                                </td>
+                                <td>
+                                     200$
+                                </td>
+                                <td>
+                                     250$
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Jacuzzi/Sauna
+                                </td>
+                                <td>
+                                     90$
+                                </td>
+                                <td>
+                                     140$
+                                </td>
+                                <td>
+                                     180$
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div> -->
+                        <!-- End Table responsive -->
+            	</div><!-- End contianer -->
+            <div class="footer_in">
+                <strong><i class="icon_phone"></i> Call us at 0044 9887732</strong>
+                <a href="#" class="modal-close"><i class="icon_close"></i></a>
+            </div>
+        </div><!-- End modal  blog-->
+
+        <!-- Modal  Contacts -->
+        <div id="modal-contacts">
+
+            <div class="top_in">
+                <img src="img/logo_in.png" width="65" height="39" alt="" data-retina="true">
+                <h3>Contact us</h3>
+                <a href="#" class="modal-close"><i class="icon_close"></i></a>
+            </div>
+
+            <div class="container">
+                <div id="map"></div><!-- end map-->
+                <div id="get_directions">
+                    <form action="http://maps.google.com/maps" method="get" target="_blank">
+                        <div class="input-group">
+                            <input type="text" name="saddr" placeholder="Enter your full address" class="form-control">
+                            <input type="hidden" name="daddr"
+                                value="New York, NY 11430" /><!-- Write here your end point -->
+                            <span class="input-group-btn">
+                                <button class="btn" type="submit" value="Get directions" style="margin-left:0;">Get
+                                    directions</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </form>
+                </div><!-- End row -->
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 class="add_bottom_20">Contacts info</h4>
+                        <ul id="contact_info">
+                            <li><strong>Address</strong> Street Number & Name - Postal Code 2034 BXU</li>
+                            <li><strong>Telephone</strong><a href="tel://004542344599">+45 423 445 99</a> / <a
+                                    href="tel://004542344599">+45 423 445 99</a></li>
+                            <li><strong>Email</strong><a href="#0">info@emailaddress.com</a> - <a
+                                    href="#">www.splendida.com</a></li>
+                        </ul>
+                        <ul id="social">
+                            <li><a href="#0"><i class="social_facebook_square"></i></a></li>
+                            <li><a href="#0"><i class="social_googleplus_square"></i></a></li>
+                            <li><a href="#0"><i class="social_twitter_square"></i></a></li>
+                            <li><a href="#0"><i class="social_pinterest_square"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8">
+                        <h4 class="add_bottom_20">How to reach us</h4>
+                        <ul id="reach_us">
+                            <li><i class="icon-spa-car"></i>
+                                <h5>By Car</h5>
+                                Decore periculis an duo, bonorum persecuti in vix. Propriae consequuntur mea ex, eum ea
+                                nostrud fabellas, per case platonem ea. Labore expetendis quaerendum no eam, quo eu quem
+                                vide incorrupte. No ignota labore duo.
+                            </li>
+                            <li><i class="icon-spa-metro"></i>
+                                <h5>By Subway</h5>
+                                Duo ludus partiendo ne. Id eum purto natum liberavisse, mea an harum viris, nec graeco
+                                legendos erroribus cu. Et usu doctus iisque, ea labores adipisci moderatius usu.
+                            </li>
+                            <li><i class="icon-spa-bus"></i>
+                                <h5>By Bus</h5>
+                                Ut expetenda iudicabit usu. At unum apeirian usu, no paulo aliquid probatus sed. Tantas
+                                iudicabit in eam, per saepe impetus commune at, tantas graeco ad est. Vim impetus
+                                percipitur cu, scaevola perfecto mediocritatem ad nam.
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- End row -->
+
+            </div><!-- End conainer -->
+        </div><!-- End modal -->
+    </div><!-- End wrapper -->
+
+    <div id="slides">
+        <ul class="slides-container">
+            <li><img src="img/cintia/OneDrive-2023-01-05/home-slides/cin 2 (1).jpg" alt=""></li>
+            <li><img src="img/cintia/OneDrive-2023-01-05/home-slides/elementos de trabajo.jpg" alt=""></li>
+            <li><img src="img/cintia/OneDrive-2023-01-05/home-slides/cintia.jpg" alt=""></li>
+            <li><img src="img/cintia/OneDrive-2023-01-05/home-slides/DSC01276.jpg" alt=""></li>
+        </ul>
+    </div>
+    <!-- End background slider -->
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-ui-1.8.22.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-timepicker.js"></script>
+    <script src="js/functions.js"></script>
+
+    <!-- GOOGLE MAP -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/mapmarker.jquery.min.js"></script>
+
+</body>
+
+</html>
